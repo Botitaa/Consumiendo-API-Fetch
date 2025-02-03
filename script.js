@@ -15,6 +15,7 @@ fetch("https://rickandmortyapi.com/api/character")
       </li>`;
     });
   });
+<<<<<<< HEAD
 
 async function fetchingData() {
   try {
@@ -32,3 +33,13 @@ async function fetchingData() {
 }
 
 fetchingData();
+=======
+async function mostrarDatos() {
+try {
+const datos = await obtenerDatosDeAPI('https://rickandmortyapi.com/api/character');
+console.log('Datos de la API:', datos);
+} catch (error) {
+console.error('Error general:', error);
+}
+}
+>>>>>>> dc59124091e5698eee253fcee9dc67380ac5f7a4

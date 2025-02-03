@@ -2,7 +2,8 @@
 
 ## Objetivo
 
-    Crear una página web sencilla que muestre una lista de personajes de la serie Rick and Morty obtenidos desde una API.
+    Crear una página web sencilla que muestre una lista de personajes de la serie
+    Rick and Morty obtenidos desde una API.
 
 ## Requisitos
 
