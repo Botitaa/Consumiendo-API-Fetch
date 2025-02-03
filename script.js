@@ -15,3 +15,11 @@ fetch("https://rickandmortyapi.com/api/character")
       </li>`;
     });
   });
+async function mostrarDatos() {
+try {
+const datos = await obtenerDatosDeAPI('https://rickandmortyapi.com/api/character');
+console.log('Datos de la API:', datos);
+} catch (error) {
+console.error('Error general:', error);
+}
+}
