@@ -15,3 +15,20 @@ fetch("https://rickandmortyapi.com/api/character")
       </li>`;
     });
   });
+
+async function fetchingData() {
+  try {
+    const response = await fetch("https://rickandmortyapi.com/api/character");
+
+    if (!response.ok) {
+      throw new Error(`Error HTTP: ${response.status}`);
+    }
+
+    const list = await response.json();
+    console.log("Acá la lista ->", list);
+  } catch (error) {
+    console.error("Error al obtener los datos:", error);
+  }
+}
+
+fetchingData();
